@@ -1,30 +1,54 @@
-# Chronos: The Graph-based AI Cognition Layer
+<div align="center">
 
-> **"Becoming the global standard for memory and common sense in Artificial General Intelligence (AGI)."**
+# chronos
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
-[![Security](https://img.shields.io/badge/security-High--Mission--Critical-red.svg)](SECURITY.md)
-[![Verification](https://img.shields.io/badge/formal--verification-Lean-green.svg)](ARCHITECTURE.md)
-[![Tech](https://img.shields.io/badge/stack-Rust%20%7C%20Mojo%20%7C%20Lean-orange.svg)](ARCHITECTURE.md)
+**The Graph-based AI Cognition Layer with Formal Proofs**
 
-## 🎯 Vision Statement
-Chronos is the orchestration layer that fuses symbolic math with neural networks to provide AI with verifiable memory and reasoning. It solves AI memory loss and hallucination by building a brain-like memory layer.
+[![CI](https://github.com/cntm-labs/chronos/actions/workflows/ci.yml/badge.svg)](https://github.com/cntm-labs/chronos/actions/workflows/ci.yml)
+[![Security](https://github.com/cntm-labs/chronos/actions/workflows/security.yml/badge.svg)](https://github.com/cntm-labs/chronos/actions/workflows/security.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/status-active-success)](./)
 
-## 🚀 Key Features
-- **Formal Verification Engine (Lean-powered):** Zero-error knowledge graph using advanced mathematics.
-- **Temporal Knowledge Trace:** Recording and traversing chronological knowledge relationships.
-- **Predictive Cognitive Model (Mojo/CUDA):** Forecasting future events based on complex graph relationships.
-- **Hierarchical Knowledge Compression:** Managing massive context through multi-level knowledge scaling.
+<!-- Language Badges -->
+![Rust](https://img.shields.io/badge/language-Rust-orange.svg) ![Mojo](https://img.shields.io/badge/language-Mojo-red.svg) ![Lean](https://img.shields.io/badge/language-Lean-purple.svg)
 
-## 🛠 Tech Stack
-- **Core:** Rust (Axum)
-- **Graph:** Cntm-Graph (Custom High-Performance Graph Engine)
-- **Time-Series:** BlowTime (Custom Time-Series Engine)
-- **AI Engine:** Mojo (PyTorch with CUDA)
-- **Logic:** Lean Proof Assistant
+<!-- LOD Badges -->
+![Rust LOD](https://img.shields.io/badge/Rust_LOD-0-blue.svg) ![Total LOD](https://img.shields.io/badge/Total_LOD-0-brightgreen.svg)
 
-## 📂 Project Structure
-Refer to [STRUCTURE.tree](STRUCTURE.tree) for the full directory map.
+</div>
 
 ---
-© 2026 [cntm-labs](https://github.com/cntm-labs)
+
+[ English | [ภาษาไทย](./locales/README.th.md) | [日本語](./locales/README.ja.md) | [简体中文](./locales/README.zh.md) ]
+
+The orchestration layer that fuses symbolic math with neural networks to provide AI with verifiable memory and reasoning. It solves AI memory loss and hallucination by building a brain-like memory layer with formal verification.
+
+## ✨ Features
+
+- 🚀 **Formal Verification Engine (Lean-powered)** — Zero-error knowledge graph using advanced mathematics to verify the accuracy of logic within the graph.
+- 🛡️ **Temporal Knowledge Trace** — Recording and traversing chronological knowledge relationships within the graph via BlowTime integration.
+- 📊 **Predictive Cognitive Model (Mojo/CUDA)** — Forecasting future events based on complex graph relationships with neural-symbolic fusion.
+
+## 🛠️ Quick Start
+
+```bash
+# Build the orchestration layer
+cargo build --release
+
+# Run verification suite
+cargo test
+
+# Run Lean proofs
+lake build
+```
+
+## 🗺️ Navigation
+
+- 🏗️ **[Architecture](ARCHITECTURE.md)** — Core design and components.
+- 📅 **[Roadmap](ROADMAP.md)** — Project timeline and milestones.
+- 🤝 **[Contributing](CONTRIBUTING.md)** — How to join and help.
+- 🌳 **[Project Structure](STRUCTURE.tree)** — Full file map.
+
+## ⚖️ License
+
+[MIT](LICENSE)
