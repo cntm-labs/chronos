@@ -2,6 +2,8 @@
 
 # chronos
 
+**The Graph-based AI Cognition Layer with Formal Proofs**
+
 
 
 [![CI](https://github.com/cntm-labs/chronos/actions/workflows/ci.yml/badge.svg)](https://github.com/cntm-labs/chronos/actions/workflows/ci.yml)

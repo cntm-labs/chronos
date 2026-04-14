@@ -2,6 +2,8 @@
 
 # chronos
 
+**基于图的AI认知层 — 通过形式化证明实现可验证的AGI记忆**
+
 
 
 [![CI](https://github.com/cntm-labs/chronos/actions/workflows/ci.yml/badge.svg)](https://github.com/cntm-labs/chronos/actions/workflows/ci.yml)

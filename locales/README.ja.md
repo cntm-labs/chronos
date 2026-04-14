@@ -2,6 +2,8 @@
 
 # chronos
 
+**グラフベースのAI認知レイヤー — 形式的証明による検証可能なAGIメモリ**
+
 
 
 [![CI](https://github.com/cntm-labs/chronos/actions/workflows/ci.yml/badge.svg)](https://github.com/cntm-labs/chronos/actions/workflows/ci.yml)

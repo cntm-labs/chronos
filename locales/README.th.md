@@ -2,6 +2,8 @@
 
 # chronos
 
+**เลเยอร์การรับรู้ AI แบบกราฟพร้อมการพิสูจน์อย่างเป็นทางการ**
+
 
 
 [![CI](https://github.com/cntm-labs/chronos/actions/workflows/ci.yml/badge.svg)](https://github.com/cntm-labs/chronos/actions/workflows/ci.yml)
