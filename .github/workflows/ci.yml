@@ -13,6 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup Rust
+        if: hashFiles('Cargo.toml') != ''
         uses: dtolnay/rust-toolchain@stable
         with:
           components: rustfmt, clippy
@@ -29,8 +30,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup Rust
+        if: hashFiles('Cargo.toml') != ''
         uses: dtolnay/rust-toolchain@stable
       - name: Cache cargo
+        if: hashFiles('Cargo.toml') != ''
         uses: actions/cache@v4
         with:
           path: |
@@ -52,10 +55,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup Modular CLI
+        if: hashFiles('**/*.mojo', '**/*.moj') != ''
         run: |
           curl -s https://get.modular.com | sh -
+          echo "$HOME/.modular/bin" >> $GITHUB_PATH
           modular auth ${{ secrets.MODULAR_AUTH_TOKEN }}
       - name: Install Mojo
+        if: hashFiles('**/*.mojo', '**/*.moj') != ''
         run: modular install mojo
       - name: Build
         if: hashFiles('**/*.mojo', '**/*.moj') != ''
@@ -71,6 +77,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup elan (Lean toolchain manager)
+        if: hashFiles('lakefile.toml', 'lakefile.lean') != ''
         uses: leanprover/lean-action@v1
       - name: Build
         if: hashFiles('lakefile.toml', 'lakefile.lean') != ''

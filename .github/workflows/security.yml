@@ -15,8 +15,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup Rust
+        if: hashFiles('Cargo.toml') != ''
         uses: dtolnay/rust-toolchain@stable
       - name: Install cargo-audit
+        if: hashFiles('Cargo.toml') != ''
         run: cargo install cargo-audit
       - name: Run audit
         if: hashFiles('Cargo.toml') != ''
@@ -31,10 +33,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup Rust
+        if: hashFiles('Cargo.toml') != ''
         uses: dtolnay/rust-toolchain@stable
         with:
           components: clippy
       - name: Install SARIF tools
+        if: hashFiles('Cargo.toml') != ''
         run: cargo install clippy-sarif sarif-fmt
       - name: Clippy SARIF
         if: hashFiles('Cargo.toml') != ''
@@ -45,8 +49,9 @@ jobs:
           | sarif-fmt
         continue-on-error: true
       - name: Upload SARIF
+        if: hashFiles('Cargo.toml') != ''
         uses: github/codeql-action/upload-sarif@v3
-        if: always()
+        if: always() && hashFiles('results.sarif') != ''
         with:
           sarif_file: results.sarif
 
@@ -57,10 +62,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup Modular CLI
+        if: hashFiles('**/*.mojo', '**/*.moj') != ''
         run: |
           curl -s https://get.modular.com | sh -
+          echo "$HOME/.modular/bin" >> $GITHUB_PATH
           modular auth ${{ secrets.MODULAR_AUTH_TOKEN }}
       - name: Install Mojo
+        if: hashFiles('**/*.mojo', '**/*.moj') != ''
         run: modular install mojo
       - name: Static Analysis
         if: hashFiles('**/*.mojo', '**/*.moj') != ''
@@ -73,6 +81,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup elan
+        if: hashFiles('lakefile.toml', 'lakefile.lean') != ''
         uses: leanprover/lean-action@v1
       - name: Check lake-manifest integrity
         if: hashFiles('lakefile.toml', 'lakefile.lean') != ''
