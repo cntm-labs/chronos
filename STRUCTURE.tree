@@ -4,6 +4,7 @@
 │   │   ├── bug_report.yml
 │   │   └── feature_request.yml
 │   ├── PULL_REQUEST_TEMPLATE.md
+│   ├── labeler.yml
 │   └── workflows
 │       ├── ci.yml
 │       ├── pr_automation.yml
@@ -13,6 +14,8 @@
 ├── CLAUDE.md
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
+├── Cargo.lock
+├── Cargo.toml
 ├── DEPLOYMENT_GUIDE.md
 ├── DESIGN_DECISIONS.md
 ├── FAQ.md
@@ -30,9 +33,25 @@
 ├── SUPPORT.md
 ├── TROUBLESHOOTING.md
 ├── VISION.md
-└── locales
-    ├── README.ja.md
-    ├── README.th.md
-    └── README.zh.md
+├── docs
+│   └── superpowers
+│       ├── plans
+│       │   └── 2026-04-15-chronos-foundation.md
+│       └── specs
+│           └── 2026-04-15-chronos-foundation-design.md
+├── locales
+│   ├── README.ja.md
+│   ├── README.th.md
+│   └── README.zh.md
+└── src
+    ├── adapters
+    │   └── mod.rs
+    ├── application
+    │   └── mod.rs
+    ├── domain
+    │   └── mod.rs
+    ├── main.rs
+    └── ports
+        └── mod.rs
 
-5 directories, 31 files
+14 directories, 41 files
