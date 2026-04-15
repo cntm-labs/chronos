@@ -1,0 +1,31 @@
+# GitHub Labeler configuration
+# For more info see https://github.com/actions/labeler
+
+"area:rust":
+  - changed-files:
+    - any-glob-to-any-file: "src/**/*.rs"
+    - any-glob-to-any-file: "Cargo.toml"
+
+"area:mojo":
+  - changed-files:
+    - any-glob-to-any-file: "**/*.mojo"
+    - any-glob-to-any-file: "**/*.moj"
+
+"area:lean":
+  - changed-files:
+    - any-glob-to-any-file: "src/logic/**/*.lean"
+    - any-glob-to-any-file: "lakefile.*"
+
+"area:docs":
+  - changed-files:
+    - any-glob-to-any-file: "**/*.md"
+    - any-glob-to-any-file: "ARCHITECTURE.md"
+
+"area:ci":
+  - changed-files:
+    - any-glob-to-any-file: ".github/workflows/*"
+    - any-glob-to-any-file: ".pre-commit-config.yaml"
+
+"area:i18n":
+  - changed-files:
+    - any-glob-to-any-file: "locales/**/*"
