@@ -19,6 +19,7 @@ jobs:
       - name: Install cargo-audit
         run: cargo install cargo-audit
       - name: Run audit
+        if: hashFiles('Cargo.toml') != ''
         run: cargo audit
   
   clippy-security:
@@ -36,6 +37,7 @@ jobs:
       - name: Install SARIF tools
         run: cargo install clippy-sarif sarif-fmt
       - name: Clippy SARIF
+        if: hashFiles('Cargo.toml') != ''
         run: >
           cargo clippy --all-targets --all-features --message-format=json
           | clippy-sarif
@@ -55,12 +57,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup Modular CLI
-        uses: modular/setup-modular@v2
-        with:
-          token: ${{ secrets.MODULAR_AUTH_TOKEN }}
+        run: |
+          curl -s https://get.modular.com | sh -
+          modular auth ${{ secrets.MODULAR_AUTH_TOKEN }}
       - name: Install Mojo
         run: modular install mojo
       - name: Static Analysis
+        if: hashFiles('**/*.mojo', '**/*.moj') != ''
         run: mojo check .
 
   
@@ -70,9 +73,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup elan
-        uses: leanprover/lean4-action@v1
+        uses: leanprover/lean-action@v1
       - name: Check lake-manifest integrity
+        if: hashFiles('lakefile.toml', 'lakefile.lean') != ''
         run: lake resolve-deps
       - name: Verify proof consistency
+        if: hashFiles('lakefile.toml', 'lakefile.lean') != ''
         run: lake build
-
