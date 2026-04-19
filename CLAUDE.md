@@ -4,7 +4,7 @@ This file is the operational core. Gemini CLI MUST follow these protocols to mai
 
 ## 🎯 Architectural Intent
 - **Core Mission:** Chronos: The Graph-based AI Cognition Layer with Formal Proofs.
-- **Primary Stack:** Rust (Axum), Cntm-Graph, BlowTime, Mojo (CUDA), Lean Proof Assistant.
+- **Primary Stack:** Rust (Axum), Cntm-Graph, Isotime, Mojo (CUDA), Lean Proof Assistant.
 - **System Nature:** The orchestration layer that fuses symbolic math with neural networks to provide AI with verifiable memory and reasoning.
 
 ## 🧬 Automated Lifecycle Management

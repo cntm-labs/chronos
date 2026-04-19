@@ -1,7 +1,7 @@
 # 🏛 Architecture: Chronos - The Graph-based AI Cognition Layer
 
 ## 🎯 High-Level Vision
-Chronos serves as the **Standard Memory for AGI**, bridging the gap between symbolic reasoning and neural processing. It provides AI with a brain-like memory layer that is both persistent (via BlowTime) and logically verifiable (via Lean).
+Chronos serves as the **Standard Memory for AGI**, bridging the gap between symbolic reasoning and neural processing. It provides AI with a brain-like memory layer that is both persistent (via Isotime) and logically verifiable (via Lean).
 
 ## 🧬 System Architecture
 
@@ -14,15 +14,15 @@ graph TD
         Chronos -->|Neural Compute| Mojo[Mojo: AI Engine]
     end
     subgraph "Temporal Persistence"
-        Cntm-Graph -->|Delta Logs| BlowTime[BlowTime: Time-Series Storage]
-        BlowTime -->|Historical Context| Cntm-Graph
+        Cntm-Graph -->|Delta Logs| Isotime[Isotime: Time-Series Storage]
+        Isotime -->|Historical Context| Cntm-Graph
     end
 ```
 
 ## 🛠 Tech Stack & Integration
 - **Core Engine:** Rust (Axum) for high-concurrency orchestration.
 - **Cognitive Graph:** Cntm-Graph (Custom Engine) for zero-copy memory mapping.
-- **Temporal Layer:** BlowTime (Custom Engine) for high-throughput time-series delta storage.
+- **Temporal Layer:** Isotime (Custom Engine) for high-throughput time-series delta storage.
 - **AI/Neural:** Mojo (PyTorch/CUDA via Modular) for predictive cognitive modeling.
 - **Formal Logic:** Lean Proof Assistant for verifying graph accuracy and security protocols.
 

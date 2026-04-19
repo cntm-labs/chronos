@@ -7,4 +7,4 @@ The core of `chronos` is built on the belief that software should be:
 - **Maintainable:** Easy for new contributors to understand.
 
 ## 🛠️ Implementation Choices
-We prioritize `Rust (Axum), Cntm-Graph, BlowTime, Mojo (CUDA), Lean` for its unique strengths in Verifiable Reasoning.
+We prioritize `Rust (Axum), Cntm-Graph, Isotime, Mojo (CUDA), Lean` for its unique strengths in Verifiable Reasoning.

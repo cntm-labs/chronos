@@ -4,7 +4,7 @@ These principles guide the development and maintenance of `chronos`.
 
 ## 🛠️ Core Architecture
 - **SOLID:** Our primary architectural guideline to ensure code remains clean and understandable.
-- **Zero-cost Abstractions:** Secondary principle focusing on the specific performance and safety needs of the `Rust (Axum), Cntm-Graph, BlowTime, Mojo (CUDA), Lean` stack.
+- **Zero-cost Abstractions:** Secondary principle focusing on the specific performance and safety needs of the `Rust (Axum), Cntm-Graph, Isotime, Mojo (CUDA), Lean` stack.
 
 ## ⚖️ Quality Standards
 1. **Uncompromising Safety:** Every line of code must prioritize data integrity and memory safety.

@@ -10,7 +10,7 @@ Beta release with Lean-verified orchestration
 Becoming the global standard for memory and common sense in Artificial General Intelligence (AGI).
 
 ### Phase 1: Foundation
-- [ ] Implement core `Rust (Axum), Cntm-Graph, BlowTime, Mojo (CUDA), Lean` engine.
+- [ ] Implement core `Rust (Axum), Cntm-Graph, Isotime, Mojo (CUDA), Lean` engine.
 - [ ] Set up basic CI/CD in `.github/workflows/ci.yml`.
 
 ### Phase 2: Scale

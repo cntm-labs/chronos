@@ -9,7 +9,7 @@ A: The orchestration layer that fuses symbolic math with neural networks to prov
 A: Use the command: `cargo test`.
 
 **Q: Which languages are supported?**
-A: Primarily `Rust (Axum), Cntm-Graph, BlowTime, Mojo (CUDA), Lean`.
+A: Primarily `Rust (Axum), Cntm-Graph, Isotime, Mojo (CUDA), Lean`.
 
 ## 🤝 Contributing
 **Q: How can I help?**

@@ -4,7 +4,7 @@
 This document outlines the process for deploying `chronos` to production environments.
 
 ## 📋 Prerequisites
-- `Rust (Axum), Cntm-Graph, BlowTime, Mojo (CUDA), Lean` runtime environment.
+- `Rust (Axum), Cntm-Graph, Isotime, Mojo (CUDA), Lean` runtime environment.
 - Access to the target server or cloud provider.
 - Configured environment variables.
 

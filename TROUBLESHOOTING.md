@@ -3,7 +3,7 @@
 ## 🔍 Common Issues
 
 ### Issue: Installation Fails
-- **Check:** Ensure your `Rust (Axum), Cntm-Graph, BlowTime, Mojo (CUDA), Lean` version matches the requirements.
+- **Check:** Ensure your `Rust (Axum), Cntm-Graph, Isotime, Mojo (CUDA), Lean` version matches the requirements.
 - **Fix:** Run `cargo build` with administrative privileges if necessary.
 
 ### Issue: Tests are failing

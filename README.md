@@ -26,7 +26,7 @@ The orchestration layer that fuses symbolic math with neural networks to provide
 ## ✨ Features
 
 - 🚀 **Formal Verification Engine (Lean-powered)** — Zero-error knowledge graph using advanced mathematics to verify the accuracy of logic within the graph.
-- 🛡️ **Temporal Knowledge Trace** — Recording and traversing chronological knowledge relationships within the graph via BlowTime integration.
+- 🛡️ **Temporal Knowledge Trace** — Recording and traversing chronological knowledge relationships within the graph via Isotime integration.
 - 📊 **Predictive Cognitive Model (Mojo/CUDA)** — Forecasting future events based on complex graph relationships with neural-symbolic fusion.
 
 ## 🛠️ Quick Start

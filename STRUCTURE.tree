@@ -9,6 +9,7 @@
 │       ├── ci.yml
 │       ├── pr_automation.yml
 │       └── security.yml
+├── .gitignore
 ├── .pre-commit-config.yaml
 ├── ARCHITECTURE.md
 ├── CLAUDE.md
@@ -38,20 +39,34 @@
 │       ├── plans
 │       │   └── 2026-04-15-chronos-foundation.md
 │       └── specs
-│           └── 2026-04-15-chronos-foundation-design.md
+│           ├── 2026-04-15-chronos-foundation-design.md
+│           └── 2026-04-16-cognitive-memory-mapping.md
 ├── locales
 │   ├── README.ja.md
 │   ├── README.th.md
 │   └── README.zh.md
-└── src
-    ├── adapters
-    │   └── mod.rs
-    ├── application
-    │   └── mod.rs
-    ├── domain
-    │   └── mod.rs
-    ├── main.rs
-    └── ports
-        └── mod.rs
+├── src
+│   ├── adapters
+│   │   ├── mocks.rs
+│   │   ├── mod.rs
+│   │   └── mojo.rs
+│   ├── application
+│   │   ├── mod.rs
+│   │   └── orchestrator.rs
+│   ├── domain
+│   │   ├── error.rs
+│   │   ├── mod.rs
+│   │   └── models.rs
+│   ├── lib.rs
+│   ├── main.rs
+│   ├── mojo
+│   │   └── engine.mojo
+│   └── ports
+│       ├── compute.rs
+│       ├── graph.rs
+│       ├── mod.rs
+│       └── storage.rs
+└── tests
+    └── integration_test.rs
 
-14 directories, 41 files
+16 directories, 54 files

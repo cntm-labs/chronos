@@ -1,7 +1,7 @@
 # Project Strategy
 
 ## 🎯 Strategic Intent
-Our goal is to build `chronos` as a leader in the `Rust (Axum), Cntm-Graph, BlowTime, Mojo (CUDA), Lean` ecosystem by focusing on:
+Our goal is to build `chronos` as a leader in the `Rust (Axum), Cntm-Graph, Isotime, Mojo (CUDA), Lean` ecosystem by focusing on:
 **Verifiable Reasoning**
 
 ## 🗺️ Execution Pillars
